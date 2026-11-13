@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import BooksGrid from "./BooksGrid";
 
 const SearchBooks = () => {
   return (
@@ -12,7 +13,7 @@ const SearchBooks = () => {
         </div>
       </div>
       <div className="search-books-results">
-        <ol className="books-grid"></ol>
+        <BooksGrid />
       </div>
     </div>
   );
