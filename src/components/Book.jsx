@@ -9,7 +9,7 @@ const Book = ({ bookTitle, bookAuthors, bookImageURL }) => {
           style={{
             width: 128,
             height: 193,
-            backgroundImage: bookImageURL,
+            backgroundImage: `url(${bookImageURL})`,
           }}
         ></div>
         <BookShelfChanger />

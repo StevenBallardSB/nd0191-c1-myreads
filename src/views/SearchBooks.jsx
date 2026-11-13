@@ -34,7 +34,7 @@ const SearchBooks = () => {
         </div>
       </div>
       <div className="search-books-results">
-        <BooksGrid />
+        <BooksGrid books={searchResults} />
       </div>
     </div>
   );

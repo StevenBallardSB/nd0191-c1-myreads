@@ -1,7 +1,11 @@
 import { Link } from "react-router-dom";
 import BookShelf from "../components/BookShelf";
 
-const ListBooks = () => {
+const ListBooks = ({ userBooks }) => {
+  const currentlyReadingBooks = userBooks.filter(
+    (book) => book.shelf == "currentlyReading",
+  );
+
   return (
     <div className="list-books">
       <div className="list-books-title">
@@ -9,7 +13,10 @@ const ListBooks = () => {
       </div>
       <div className="list-books-content">
         <div>
-          <BookShelf bookShelfTitle={"Currently Reading"} />
+          <BookShelf
+            bookShelfTitle={"Currently Reading"}
+            books={currentlyReadingBooks}
+          />
 
           <div className="bookshelf">
             <h2 className="bookshelf-title">Want to Read</h2>

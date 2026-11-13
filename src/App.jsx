@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import * as BooksAPI from "./BooksAPI";
 
 function App() {
-  const [userBooks, setUserBooks] = useState({});
+  const [userBooks, setUserBooks] = useState([{}]);
 
   const getAllBooks = async () => {
     const response = await BooksAPI.getAll();
@@ -28,7 +28,7 @@ function App() {
 
   return (
     <Routes>
-      <Route exact path="/" element={<ListBooks />} />
+      <Route exact path="/" element={<ListBooks userBooks={userBooks} />} />
       <Route path="/search" element={<SearchBooks />} />
     </Routes>
   );
