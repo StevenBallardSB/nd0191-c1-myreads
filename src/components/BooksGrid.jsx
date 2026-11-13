@@ -14,7 +14,7 @@ const BooksGrid = ({ books }) => {
             <Book
               bookTitle={book.title}
               bookAuthors={book.authors}
-              bookImageURL={book.imageLinks.thumbnail}
+              bookImageURL={book.imageLinks?.thumbnail}
             />
           </li>
         ))}
