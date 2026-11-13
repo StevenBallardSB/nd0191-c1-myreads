@@ -1,7 +1,7 @@
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
-import ListBooks from "./components/ListBooks";
-import SearchBooks from "./components/SearchBooks";
+import ListBooks from "./views/ListBooks";
+import SearchBooks from "./views/SearchBooks";
 
 function App() {
   return (

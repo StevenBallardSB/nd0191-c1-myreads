@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import BookShelf from "./BookShelf";
+import BookShelf from "../components/BookShelf";
 
 const ListBooks = () => {
   return (

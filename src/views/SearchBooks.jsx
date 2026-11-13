@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import BooksGrid from "./BooksGrid";
+import BooksGrid from "../components/BooksGrid";
 
 const SearchBooks = () => {
   return (
