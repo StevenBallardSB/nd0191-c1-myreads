@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
 import BooksGrid from "../components/BooksGrid";
 import { useEffect, useState } from "react";
 import * as BooksAPI from "../BooksAPI";
+import SearchBar from "../components/SearchBar";
 
 /**
  * @description The view for the SearchBooks page which is composed of a search bar and a books grid component
@@ -28,19 +28,7 @@ const SearchBooks = () => {
   return (
     <div className="search-books">
       {/* TODO: Refactor search bar into it's own component */}
-      <div className="search-books-bar">
-        <Link to={"/"} className="close-search">
-          Close
-        </Link>
-        <div className="search-books-input-wrapper">
-          <input
-            type="text"
-            placeholder="Search by title, author, or ISBN"
-            value={searchInput}
-            onChange={(e) => setSearchInput(e.target.value)}
-          />
-        </div>
-      </div>
+      <SearchBar searchInput={searchInput} setSearchInput={setSearchInput} />
       <div className="search-books-results">
         <BooksGrid books={searchResults} />
       </div>
