@@ -17,6 +17,7 @@ const SearchBar = ({ searchInput, setSearchInput }) => {
       <div className="search-books-input-wrapper">
         <input
           type="text"
+          name="Search Books Input Field"
           placeholder="Search by title, author, or ISBN"
           value={searchInput}
           onChange={(e) => setSearchInput(e.target.value)}

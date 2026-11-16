@@ -5,7 +5,7 @@
 const BookShelfChanger = () => {
   return (
     <div className="book-shelf-changer">
-      <select>
+      <select name="Book Shelf Changer">
         <option value="none" disabled>
           Move to...
         </option>
