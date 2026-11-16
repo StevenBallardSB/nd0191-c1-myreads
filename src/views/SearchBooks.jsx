@@ -27,7 +27,6 @@ const SearchBooks = () => {
 
   return (
     <div className="search-books">
-      {/* TODO: Refactor search bar into it's own component */}
       <SearchBar searchInput={searchInput} setSearchInput={setSearchInput} />
       <div className="search-books-results">
         <BooksGrid books={searchResults} />
