@@ -16,9 +16,10 @@ const SearchBooks = () => {
      * @description Used to call the BooksAPI search function with the users input and update the searchResults state with the response
      */
     const getSearchResults = async () => {
-      // TODO: Sanitize the searchInput string before passing it into backend API call.
       const response =
-        searchInput != "" ? await BooksAPI.search(searchInput) : [];
+        searchInput != ""
+          ? await BooksAPI.search(searchInput.trim().toString())
+          : [];
       setSearchResults(response);
     };
 
