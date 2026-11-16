@@ -1,6 +1,12 @@
 import { Link } from "react-router-dom";
 import BookShelf from "../components/BookShelf";
 
+/**
+ * @description The view for the list books page which is composed of book shelf components and a link to the books search page
+ * @param {object} props
+ * @param {Object[]} props.userBooks - An array of books that the user has in their library
+ * @returns {JSX.Element} The JSX for the list books page
+ */
 const ListBooks = ({ userBooks }) => {
   const currentlyReadingBooks = userBooks.filter(
     (book) => book.shelf == "currentlyReading",

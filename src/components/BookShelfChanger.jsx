@@ -1,3 +1,7 @@
+/**
+ * @description The BookShelfChanger component which is composed of a select element with options to change the bookshelf for the book
+ * @returns {JSX.Element} The JSX for the book shelf changer component
+ */
 const BookShelfChanger = () => {
   return (
     <div className="book-shelf-changer">
